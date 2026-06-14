@@ -5,17 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Agro Forte</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
 }
 
 body{
-    background:#2d6b3f;
-    color:white;
+    font-family:'Montserrat',sans-serif;
+    background:#245f35;
+    color:#fff;
     line-height:1.6;
 }
 
@@ -26,244 +28,319 @@ body{
 }
 
 section{
-    padding:60px 0;
+    padding:70px 0;
+}
+
+h1,h2,h3{
+    font-weight:800;
 }
 
 .hero{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns:1fr 1fr;
     gap:40px;
-    flex-wrap:wrap;
+    align-items:center;
 }
 
-.hero-text{
-    flex:1;
+.hero h1{
+    font-size:4rem;
+    line-height:1;
+    margin:20px 0;
 }
 
-.hero-text h1{
-    font-size:3rem;
-    margin-bottom:20px;
+.hero p{
+    max-width:500px;
 }
 
 .hero img{
-    width:400px;
-    max-width:100%;
-    border-radius:12px;
+    width:100%;
+    border-radius:18px;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:40px;
-    font-size:2rem;
+    font-size:3rem;
+    margin-bottom:50px;
 }
 
-.content-row{
-    display:flex;
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
     gap:30px;
     align-items:center;
     margin-bottom:50px;
-    flex-wrap:wrap;
-}
-
-.content-row.reverse{
-    flex-direction:row-reverse;
-}
-
-.content-row img{
-    width:450px;
-    max-width:100%;
-    border-radius:12px;
-}
-
-.content-text{
-    flex:1;
-}
-
-.content-text h3{
-    margin-bottom:15px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
 }
 
 .card{
-    background:#f4efe8;
-    color:#333;
-    padding:25px;
-    border-radius:10px;
+    border:1px solid #1ea6d8;
+    border-radius:15px;
+    padding:30px;
+    min-height:250px;
 }
 
 .card h3{
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
-.services{
+.image-box img{
+    width:100%;
+    border-radius:15px;
+    display:block;
+}
+
+.principios{
     display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.principio{
+    background:#efe7db;
+    color:#264d2f;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+}
+
+.servicos{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.lista-servicos{
+    display:flex;
+    flex-direction:column;
     gap:15px;
 }
 
-.service{
-    background:white;
-    color:#333;
-    padding:15px;
-    border-radius:8px;
+.servico{
+    background:#efe7db;
+    color:#264d2f;
+    padding:18px;
+    border-radius:10px;
+    font-weight:600;
 }
 
-.commitment{
-    display:flex;
+.compromisso{
+    display:grid;
+    grid-template-columns:1fr 1fr;
     gap:30px;
     align-items:center;
-    flex-wrap:wrap;
 }
 
-.commitment img{
-    width:450px;
-    max-width:100%;
-    border-radius:12px;
+.compromisso img{
+    width:100%;
 }
 
-.cta{
-    text-align:center;
-    padding:80px 20px;
+.footer-cta{
+    padding:100px 0;
 }
 
-.cta h2{
+.footer-cta h2{
+    font-size:4rem;
+    line-height:1;
+    max-width:800px;
+}
+
+small{
+    font-weight:700;
+}
+
+@media(max-width:768px){
+
+.hero,
+.grid-2,
+.servicos,
+.compromisso{
+    grid-template-columns:1fr;
+}
+
+.principios{
+    grid-template-columns:1fr;
+}
+
+.hero h1,
+.footer-cta h2{
     font-size:2.5rem;
-    margin-bottom:20px;
 }
 
-.btn{
-    display:inline-block;
-    background:#fff;
-    color:#2d6b3f;
-    text-decoration:none;
-    padding:15px 30px;
-    border-radius:8px;
-    font-weight:bold;
+.section-title{
+    font-size:2rem;
 }
 
-footer{
-    text-align:center;
-    padding:30px;
 }
 </style>
 </head>
 <body>
 
-<div class="container">
+<section class="hero container">
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Bem-vindo à Agro Forte</h1>
-            <p>
-                Equilíbrio entre produção agrícola e preservação ambiental.
-                Promovemos práticas sustentáveis para um futuro mais verde.
-            </p>
-        </div>
+<div>
+<small>Agrinho 2026</small>
 
-        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800" alt="">
-    </section>
+<h1>
+Bem-vindo à Agro Forte:
+Equilíbrio entre produção e meio ambiente
+</h1>
 
-    <section>
-        <h2 class="section-title">Práticas Agrícolas Sustentáveis</h2>
+<p>
+Na Agro Forte buscamos integrar um equilíbrio sustentável entre a produção agrícola e a preservação ambiental para um futuro sustentável.
+</p>
+</div>
 
-        <div class="content-row">
-            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800" alt="">
-            <div class="content-text">
-                <h3>Práticas sustentáveis para o futuro</h3>
-                <p>
-                    Utilizamos técnicas que preservam os recursos naturais,
-                    melhoram a produtividade e reduzem impactos ambientais.
-                </p>
-            </div>
-        </div>
+<img src="img1.jpg" alt="">
+</section>
 
-        <div class="content-row reverse">
-            <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800" alt="">
-            <div class="content-text">
-                <h3>Métodos de cultivo ecológicos</h3>
-                <p>
-                    Incentivamos a rotação de culturas, compostagem e uso
-                    consciente dos recursos hídricos.
-                </p>
-            </div>
-        </div>
+<section class="container">
 
-        <div class="content-row">
-            <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=800" alt="">
-            <div class="content-text">
-                <h3>Abordagem moderna</h3>
-                <p>
-                    Tecnologia e sustentabilidade trabalhando juntas para
-                    aumentar a eficiência da produção agrícola.
-                </p>
-            </div>
-        </div>
-    </section>
+<h2 class="section-title">
+PRÁTICAS AGRÍCOLAS SUSTENTÁVEIS
+</h2>
 
-    <section>
-        <h2 class="section-title">Princípios-Chave</h2>
+<div class="grid-2">
+<div class="image-box">
+<img src="img2.jpg">
+</div>
 
-        <div class="cards">
-            <div class="card">
-                <h3>Proteção do Solo</h3>
-                <p>Práticas que mantêm a fertilidade e evitam erosão.</p>
-            </div>
+<div class="card">
+<h3>Práticas sustentáveis para o nosso futuro</h3>
+<p>
+O caminho para a agricultura sustentável compreende práticas modernas que integrem a biodiversidade e o uso responsável dos recursos.
+</p>
+</div>
+</div>
 
-            <div class="card">
-                <h3>Conservação da Água</h3>
-                <p>Uso eficiente dos recursos hídricos.</p>
-            </div>
+<div class="grid-2">
+<div class="card">
+<h3>Métodos de cultivo ecológicos são importantes</h3>
+<p>
+Aplicar técnicas sustentáveis melhora a qualidade do solo, reduz impactos ambientais e fortalece a produção agrícola.
+</p>
+</div>
 
-            <div class="card">
-                <h3>Biodiversidade</h3>
-                <p>Preservação da fauna e flora locais.</p>
-            </div>
-        </div>
-    </section>
+<div class="image-box">
+<img src="img3.jpg">
+</div>
+</div>
 
-    <section class="content-row">
-        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800" alt="">
+<div class="grid-2">
+<div class="image-box">
+<img src="img4.jpg">
+</div>
 
-        <div class="content-text">
-            <h2>Nossos principais serviços</h2>
+<div class="card">
+<h3>Abordagens inovadoras para práticas sustentáveis</h3>
+<p>
+Tecnologias e métodos modernos ajudam a produzir mais com menor impacto ambiental.
+</p>
+</div>
+</div>
 
-            <div class="services">
-                <div class="service">Consultoria em Agricultura Sustentável</div>
-                <div class="service">Suporte Técnico Especializado</div>
-                <div class="service">Programas de Desenvolvimento Comunitário</div>
-            </div>
-        </div>
-    </section>
+<div class="grid-2">
+<div class="card">
+<h3>Envolver a comunidade em práticas sustentáveis</h3>
+<p>
+Colaborando com agricultores e especialistas para promover conhecimento e desenvolvimento regional.
+</p>
+</div>
 
-    <section class="commitment">
-        <div class="content-text">
-            <h2>Nosso Compromisso</h2>
-            <p>
-                Trabalhamos para promover uma agricultura responsável,
-                economicamente viável e ambientalmente equilibrada.
-            </p>
-        </div>
+<div class="image-box">
+<img src="img5.jpg">
+</div>
+</div>
 
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800" alt="">
-    </section>
+<div class="grid-2">
+<div class="image-box">
+<img src="img6.jpg">
+</div>
 
-    <section class="cta">
-        <h2>Junte-se ao movimento sustentável</h2>
-        <p>Faça a diferença hoje mesmo.</p>
-        <br>
-        <a href="#" class="btn">Saiba Mais</a>
-    </section>
+<div class="card">
+<h3>Estudos de caso bem-sucedidos</h3>
+<p>
+Exemplos reais demonstrando resultados positivos em agricultura sustentável.
+</p>
+</div>
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+PRINCÍPIOS-CHAVE DA AGRICULTURA SUSTENTÁVEL
+</h2>
+
+<div class="principios">
+
+<div class="principio">
+<h3>Eficiência</h3>
+<p>Práticas agrícolas eficientes para maior produtividade.</p>
+</div>
+
+<div class="principio">
+<h3>Biodiversidade</h3>
+<p>Promovendo ecossistemas equilibrados.</p>
+</div>
+
+<div class="principio">
+<h3>Conservação</h3>
+<p>Técnicas que protegem recursos naturais.</p>
+</div>
 
 </div>
 
-<footer>
-    © 2025 Agro Forte
-</footer>
+</section>
+
+<section class="container servicos">
+
+<div>
+<img src="img7.jpg" style="width:100%;border-radius:15px;">
+</div>
+
+<div>
+<h2 style="font-size:3rem;margin-bottom:30px;">
+Nossos principais serviços
+</h2>
+
+<div class="lista-servicos">
+<div class="servico">Soluções para Agricultura Orgânica</div>
+<div class="servico">Serviços de Consultoria Especializada</div>
+<div class="servico">Programas de Envolvimento Comunitário</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="container compromisso">
+
+<div>
+<h2 style="font-size:3rem;line-height:1;">
+Nosso Compromisso com a Gestão Responsável
+</h2>
+
+<p style="margin-top:20px;">
+Na Agro Forte, adotamos práticas sustentáveis que respeitam o meio ambiente e fortalecem a produção agrícola.
+</p>
+</div>
+
+<div>
+<img src="img8.jpg">
+</div>
+
+</section>
+
+<section class="footer-cta container">
+
+<small>Agro Forte</small>
+
+<h2>
+Junte-se ao movimento sustentável e faça a diferença hoje mesmo!
+</h2>
+
+</section>
 
 </body>
 </html>
